@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid #000; */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a6bcd0;
+}
+
+.card {
+  width: 500px;
+  min-height: 700px;
+  position: relative;
+  background-color: white;
+}
+
+.head {
+  max-width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #6996d8;
+  color: white;
+}
+
+.today {
+  text-align: center;
+  margin: 20px 2px;
+}
+.line {
+  border-bottom: 1px solid rgba(88, 69, 69, 0.646);
+  width: 200px;
+  display: inline-block;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 700px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.left {
+  width: 70%;
+  min-height: 70px;
+
+  align-self: start;
+  margin-left: 10px;
+  border-left: 10px solid rgb(255, 255, 255);
+  border-top: 10px solid #e6edf6;
+  background-color: #e6edf6;
+}
+.right {
+  width: 70%;
+  min-height: 70px;
+
+  align-self: flex-end;
+
+  border-right: 10px solid rgb(255, 255, 255);
+  border-top: 10px solid #e6edf6;
+  margin-right: 10px;
+  background-color: #e6edf6;
+}
+
+.time {
+  top: -30px;
+  color: rgba(108, 98, 98, 0.426);
+}
+.input {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgba(192, 165, 165, 0.468);
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  left: 40px;
+}
+
+.inputBtn {
+  flex: 1;
+  min-width: 400px;
+  min-height: 50px;
+  outline: none;
+  border: 0px solid;
+}
+.input button {
+  border: none;
+  color: #6996d8;
+  background-color: white;
+  font-size: 20px;
+}
